@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notes_nav_graph"
+    app:startDestination="@id/notesGridFragment">
+
+    <fragment
+        android:id="@+id/notesGridFragment"
+        android:name="com.example.mynotes.ui.home.NotesGridFragment"
+        android:label="My Notes">
+        <action
+            android:id="@+id/action_notesGridFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_notesGridFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.mynotes.ui.noteeditor.NoteFragment"
+        android:label="Note" />
+    <argument
+        android:name="id"
+        app:argType="integer" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mynotes.ui.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+</navigation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/unselected_shape"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        tools:text="@string/lorem_ipsum"
+        android:layout_height="150dp"
+        android:padding="8dp"
+        android:backgroundTint="@color/design_default_color_secondary"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:maxLines="2"
+        android:textAlignment="center"
+        tools:text="@string/lorem_ipsum"
+        android:layout_marginVertical="8dp"
+        android:textStyle="bold"
+        android:ellipsize="end"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@android:color/transparent"
+        tools:text="31 March 2025"
+        android:alpha="0.8" />
+
+
+</LinearLayout>
